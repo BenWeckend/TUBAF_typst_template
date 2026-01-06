@@ -85,6 +85,10 @@
   ),
 )
 
+// https://github.com/typst/typst/issues/1295
+#let in-outline = state("in-outline", false)
+#let flex-caption(short: none, long: none) = context if state("in-outline", false).get() { short} else { long }
+
 #let longdate(
   lang: "en",
   datetime,
@@ -228,6 +232,11 @@
   outline(indent: 0.5cm)
   pagebreak()
 
+  show outline: it => {
+    in-outline.update(true)
+    it
+    in-outline.update(false)
+  }
 
   // list of images
   let image-outline() = {

@@ -52,6 +52,12 @@
 )
 
 = Einleitung
+#figure(
+  image("TUBAF_Logo_blau.svg"),
+  caption: tubaf.flex-caption(
+    long: [Das Markenlogo ist das zentrale, identitätsstiftende Kernelement im visuellen Auftritt der Universität.],
+    short: [Markenlogo])
+)
 #lorem(100)
 
 = Wissensstand
