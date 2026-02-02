@@ -60,8 +60,17 @@
 )
 #lorem(100)
 
+
 = Wissensstand
 #lorem(200)
+
+
+*Die folgenden Hinweise sind eher nicht in einer Abschlussarbeit zu verwenden, da sie zu informell sind, aber für Praktika etc. vlt:*
+#tubaf.note([Dies ist ein informeller Hinweis])
+
+#tubaf.tip([Verwende diese Sektion, für Tipps.])
+
+#tubaf.warning([Dies ist eine Warnung.])
 
 = Untersuchungen
 #lorem(50)
