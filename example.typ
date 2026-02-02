@@ -31,6 +31,7 @@
 #show: tubaf.report.with(
   type: "Praktikumsbericht",
   title: "Fachpraktikum Robotik bei wichtigem Unternehmen",
+  subtitle: "Subtitel des Berichts",
   authors: ((
     name: "Shorton Kreditz",
     studentID: "12345",

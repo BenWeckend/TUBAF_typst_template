@@ -187,6 +187,7 @@
 #let report(
   type: "",
   title: "",
+  subtitle: "",
   authors: (
     (
       title: "", 
@@ -232,6 +233,10 @@
     text(size: sizes.subtitle)[#type]
     v(0pt)
     text(size: sizes.title)[*#title*]
+    if subtitle != "" {
+      v(0.5cm)
+      text(size: sizes.large, weight: "semibold")[#subtitle]
+    }
     v(1cm)
     for author in authors {
       text(size: sizes.large)[#author.name]
